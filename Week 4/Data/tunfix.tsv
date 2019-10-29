@@ -1,0 +1,116 @@
+Complete	Censored	HZ.Class	Enter.Mex	Enter.US	SOIL.TYPE.x	North	East	Discovery.Date	Shoring	Lights	Dewater	Vent	SIZE.CLASS	DiscDate.DDMMYYYY	Mosaic	Mosaic5	Loc	CLen
+Incomplete	None	B2	Bldg	Bldg	Sandy Clay	32.66594444	115.4814444	9/12/2003	Y	Y	N	Y	B	12/9/2003	Sophisticated	Sophisticated	Other	Long
+Incomplete	None	B1	Bldg	Unk	Sandy Clay	32.66644444	115.4789444	11/12/2003	Y	N	N	N	B	12/11/2003	Crude	"Crude, Other"	Other	Long
+Complete	None	B3	Bldg	Bldg	Sandy Clay	32.66636111	115.4776944	2/25/2005	Y	Y	Y	Y	B	25/02/2005	Sophisticated	Sophisticated	Other	Long
+Complete	None	B3	Bldg	Bldg	Sandy Clay	32.67638889	115.5041667	9/15/2006	Y	Y	N	Y	B	15/09/2006	Sophisticated	Sophisticated	Other	Long
+Incomplete	None	B2	Bldg	Unk	Sandy Clay	32.665056	115.476097	9/1/2008	Y	Y	N	Y	B	1/9/2008	Sophisticated	Sophisticated	Other	Long
+Incomplete	None	B2	Unk	Unk	Sandy Clay	-1	-1	10/24/2008	Y	Y	N	Y	B	24/10/2008	Sophisticated	Sophisticated	Other	Long
+Complete	None	B3	Bldg	Bldg	Sandy Clay	31.34388889	109.5527778	5/17/1990	Y	Y	Y	Y	B	17/05/1990	Sophisticated	Sophisticated	Other	Long
+Complete	NA		Outside	Sewer		-1	-1	4/7/2009	N	N	N	N		7/4/2009	Infra	"Infra, Other"	Other	Tiny
+Incomplete	None	A1	Outside	Unk	Sandy Clay	-1	-1	4/29/2002	N	N	N	N	A	29/04/2002	Crude	"Crude, Other"	SoCal	Medium
+Complete	NA		Outside	Sewer		-1	-1	3/29/2009	N	N	N	N		29/03/2009	Infra	"Infra, Other"	SoCal	Tiny
+Complete	None	B3	Bldg	Bldg	Sandy Clay	49.02327778	122.4823306	7/20/2005	Y	Y	Y	Y	B	20/07/2005	Sophisticated	Sophisticated	Other	Long
+Complete	None	B2	Bldg	Bldg	Sandy Clay	31.34333333	109.9713889	5/1/1999	Y	N	N	N	B	1/5/1999	Sophisticated	Sophisticated	Other	Long
+Complete	None	A1	Sewer	Bldg	Sandstone	31.33305556	110.9422222	9/1/1995	Y	N	N	N	A	1/9/1995	Infra	"Infra, Nogales"	NGL	Medium
+Complete	None	B2	Sewer	Bldg	Sandstone	31.33305556	110.9422222	1/20/1999	N	Y	N	Y	B	20/01/1999	Infra	"Infra, Nogales"	NGL	Long
+Complete	None	B2	Bldg	Bldg	Decomposed Granite	31.33305556	110.9422222	1/20/1999	Y	Y	N	N	B	20/01/1999	Infra	"Infra, Nogales"	NGL	Medium
+Complete	None	A1	Sewer	Bldg	Sandstone	31.33305556	110.9422222	10/21/1999	N	N	N	N	A	21/10/1999	Infra	"Infra, Nogales"	NGL	Medium
+Incomplete	Right	A1	Sewer	Bldg	Sandstone	-1	-1	10/22/1999	N	N	N	N	A	22/10/1999	Infra	"Infra, Nogales"	NGL	Medium
+Complete	Right	A1	Sewer	Bldg	Sandstone	31.33305556	110.9422222	5/16/2000	Y	N	N	N	A	16/05/2000	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Bldg	Sandstone	31.34055	110.93325	6/29/2000	N	N	N	N	A	29/06/2000	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Bldg	Sandstone	31.34055	110.9325778	2/26/2001	N	Y	N	N	A	26/02/2001	Infra	"Infra, Nogales"	NGL	Short
+Incomplete	None	A1	Outside	Unk	Sandstone	31.33295	110.9317694	9/4/2001	N	N	N	N	A	4/9/2001	Crude	"Crude, Nogales"	NGL	Tiny
+Complete	None	A1	Outside	Bldg	Decomposed Granite	31.33311944	110.9458	12/11/2001	N	N	N	N	A	11/12/2001	Crude	"Crude, Nogales"	NGL	Medium
+Incomplete	None	A1	Sewer	Unk	Sandstone	31.33311944	110.9458	1/21/2002	N	N	N	N	A	21/01/2002	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	B1	Sewer	Outside	Sandstone	31.33316944	110.9443333	4/15/2002	N	Y	N	N	B	15/04/2002	Infra	"Infra, Nogales"	NGL	Medium
+Complete	Right	A1	Bldg	Outside	Sandstone	-1	-1	12/27/2002	N	N	N	N	A	27/12/2002	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None		Outside	Sewer	Sandstone	-1	-1	1/11/2003	N	N	N	N		11/1/2003	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	B3	Bldg	Bldg	Decomposed Granite	31.33638889	110.9480694	9/12/2003	Y	Y	N	Y	B	12/9/2003	Sophisticated	Sophisticated	NGL	Long
+Complete	None		Unk	Sewer	Sandstone	31.33236111	110.9446667	11/18/2003	N	N	N	N		18/11/2003	Infra	"Infra, Nogales"	NGL	Short
+Incomplete	None		Bldg	Sewer	Sandstone	31.33310833	110.9451278	3/1/2005	N	N	N	N		1/3/2005	Infra	"Infra, Nogales"	NGL	Long
+Incomplete	Right	A1	Unk	Bldg	Sandstone	31.33277778	110.9403306	3/15/2005	N	N	N	N	A	15/03/2005	Crude	"Crude, Nogales"	NGL	Medium
+Complete	None		Outside	Sewer	Sandstone	31.32777778	110.9452778	8/11/2005	N	N	N	N		11/8/2005	Infra	"Infra, Nogales"	NGL	Medium
+Incomplete	None	A1	Bldg	Unk	Sandstone	31.33311944	110.9400444	10/29/2005	N	N	N	N	A	29/10/2005	Crude	"Crude, Nogales"	NGL	Medium
+Complete	None		Sewer	Bldg	Sandstone	31.33311944	110.9458	10/31/2005	N	N	N	N		31/10/2005	Infra	"Infra, Nogales"	NGL	Medium
+UNK	None	B1			Decomposed Granite	-1	-1	3/1/2006	Y	Y	N	N	B	1/3/2006	Crude	"Crude, Nogales"	NGL	Long
+Incomplete	None	B1	Outside	Outside	Sandstone	31.33309	110.94554	3/2/2006	N	Y	N	Y	B	2/3/2006	Infra	"Infra, Nogales"	NGL	Medium
+Incomplete	None	B1	Bldg	Unk	Decomposed Granite	-1	-1	3/4/2006	N	N	N	N	B	4/3/2006	Crude	"Crude, Nogales"	NGL	Long
+Complete	Right	A1	Unk	Unk	Sandstone	-1	-1	1/6/2007	N	N	N	N	A	6/1/2007	Crude	"Crude, Nogales"	NGL	Medium
+Incomplete	None	A1	Bldg	Unk	Decomposed Granite	31.33311944	110.9458	1/10/2007	N	N	N	N	A	10/1/2007	Crude	"Crude, Nogales"	NGL	Tiny
+Incomplete	None	A1	Sewer	Outside	Sandstone	31.333	110.9441694	2/8/2007	N	N	N	N	A	8/2/2007	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Bldg	Sandstone	-1	-1	4/19/2007	N	N	N	N	A	19/04/2007	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	B1	Bldg	Bldg	Decomposed Granite	31.33327	110.93431	6/28/2007	Y	Y	N	N	B	28/06/2007	Crude	"Crude, Nogales"	NGL	Long
+Complete	None	A1	Sewer	Bldg	Sandstone	31.33782	110.93935	6/29/2007	N	N	N	N	A	29/06/2007	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	A1	Sewer	Bldg	Decomposed Granite	31.34419444	110.9597778	7/11/2007	N	N	N	N	A	11/7/2007	Infra	"Infra, Nogales"	NGL	Medium
+Complete	None	A1	Sewer	Bldg	Sandstone	-1	-1	7/29/2007	N	Y	N	Y	A	29/07/2007	Infra	"Infra, Nogales"	NGL	Short
+Incomplete	Right	A1	Bldg	Unk	Decomposed Granite	31.332448	110.938416	9/7/2007	N	Y	N	N	A	7/9/2007	Crude	"Crude, Nogales"	NGL	Short
+Incomplete	None	A1	Sewer	Unk	Sandstone	31.33286	110.94246	9/23/2007	N	N	N	N	A	23/09/2007	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Outside	Sewer	Sandstone	31.32279	110.94125	10/3/2007	N	N	N	N	A	3/10/2007	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	A1	Unk	Sewer	Sandstone	-1	-1	12/2/2007	N	N	N	N	A	2/12/2007	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	A1	Outside	Outside	Sandstone	31.33302	110.94023	12/11/2007	N	N	N	N	A	11/12/2007	Crude	"Crude, Nogales"	NGL	Short
+Complete	None	B1	Sewer	Bldg	Sandstone	31.33302	110.94933	12/18/2007	Y	N	N	N	B	18/12/2007	Infra	"Infra, Nogales"	NGL	Medium
+Complete	None	B1	Sewer	Sewer	Sandstone	31.33667	110.9439444	1/16/2008	N	N	N	N	B	16/01/2008	Infra	"Infra, Nogales"	NGL	Long
+Complete	Right	A1	Unk	Unk	Sandstone	31.33283	110.94553	5/5/2008	Y	N	N	N	A	5/5/2008	Crude	"Crude, Nogales"	NGL	Short
+Incomplete	None	A1	Outside	Sewer	Sandstone	-1	-1	5/14/2008	N	N	N	N	A	14/05/2008	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Outside	Outside	Sandstone	31.33275	110.95307	5/29/2008	N	N	N	N	A	29/05/2008	Crude	"Crude, Nogales"	NGL	Tiny
+Complete	Right	A1	Outside	Outside	Sandstone	31.33288889	110.9507778	6/1/2008	N	N	N	N	A	1/6/2008	Crude	"Crude, Nogales"	NGL	Short
+Complete	Right	A1	Unk	Unk	Sandstone	31.33342	110.94567	6/18/2008	N	N	N	N	A	18/06/2008	Infra	"Infra, Nogales"	NGL	Short
+UNK	Right	A1	Unk	Outside	Sandstone	31.33268	110.94351	7/4/2008	N	N	N	N	A	4/7/2008	Crude	"Crude, Nogales"	NGL	Tiny
+Complete	Right	A1	Outside	Outside	Sandstone	31.33289	110.95071	7/7/2008	N	N	N	N	A	7/7/2008	Crude	"Crude, Nogales"	NGL	Medium
+Complete	None	A1	Sewer	Sewer	Sandstone	31.33258	110.94241	7/13/2008	N	N	N	N	A	13/07/2008	Infra	"Infra, Nogales"	NGL	Short
+Complete	Right	B1	Unk	Bldg	Decomposed Granite	31.33303	110.93408	8/15/2008	N	N	N	N	B	15/08/2008	Crude	"Crude, Nogales"	NGL	Medium
+Complete	None	A1	Outside	Outside	Sandstone	-1	-1	9/11/2008	N	N	N	N	A	11/9/2008	Crude	"Crude, Nogales"	NGL	Tiny
+Complete	None	A1	Unk	Outside	Sandstone	-1	-1	10/25/2008	Y	N	N	N	A	25/10/2008	Infra	"Infra, Nogales"	NGL	Short
+Incomplete	None	A1	Outside	Unk	Sandstone	-1	-1	10/25/2008	N	N	N	N	A	25/10/2008	Crude	"Crude, Nogales"	NGL	Tiny
+UNK	Right	A1	Unk	Outside	Sandstone	-1	-1	11/1/2008	N	N	N	N	A	1/11/2008	Crude	"Crude, Nogales"	NGL	Tiny
+Complete	None	B1	Unk	Sewer	Sandstone	-1	-1	11/10/2008	N	N	N	N	B	10/11/2008	Infra	"Infra, Nogales"	NGL	Long
+Complete	None	A1	Sewer	Sewer	Sandstone	31.3379	110.94012	11/19/2008	N	N	N	N	A	19/11/2008	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Bldg	Sandstone	31.335667	110.957533	11/19/2008	N	N	N	N	A	19/11/2008	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Outside	Sandstone	31.3282	110.94543	12/11/2008	N	N	N	N	A	11/12/2008	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	A1	Outside	Outside	Sandstone	31.33282	110.9401	12/12/2008	N	N	N	N	A	12/12/2008	Crude	"Crude, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Outside	Sandstone	31.33283	110.95068	12/13/2008	N	N	N	N	A	13/12/2008	Infra	"Infra, Nogales"	NGL	Short
+Complete	None	A1	Sewer	Outside	Sandstone	31.33438889	110.9528889	12/29/2008	N	N	N	N	A	29/12/2008	Infra	"Infra, Nogales"	NGL	Tiny
+Complete	None	A1	Sewer	Sewer	Sandstone	-1	-1	12/29/2008	N	N	N	N	A	29/12/2008	Infra	"Infra, Nogales"	NGL	Medium
+Incomplete	NA		Sewer	Unk		31.33261	110.95009	1/19/2009	N	N	N	N		19/01/2009	Infra	"Infra, Nogales"	NGL	Tiny
+Incomplete	None		Sewer	Unk		31.33261	110.94916	1/19/2009	N	N	N	N		19/01/2009	Infra	"Infra, Nogales"	NGL	Short
+UNK	NA		Unk	Outside		-1	-1	3/6/2009	N	N	N	N		6/3/2009	Crude	"Crude, Nogales"	NGL	Tiny
+Complete		B1	UNK	Sewer		-1	-1	5/8/2009	N	N	N	N	B	8/5/2009	Infra	"Infra, Nogales"	NGL	Tiny
+UNK	Right	A1		UNK		-1	-1	6/1/2009	N	N	N	N	A	1/6/2009	Crude	"Crude, Nogales"	NGL	Short
+UNK	Right					-1	-1	6/3/2009	N	N	N	N		3/6/2009	Infra	"Infra, Nogales"	NGL	Medium
+Incomplete	None		Bldg	Bldg		-1	-1	6/10/2009	N	N	N	N		10/6/2009	Crude	"Crude, Nogales"	NGL	Medium
+Incomplete	Right		UNK	UNK		-1	-1	7/3/2009	N	N	N	N			Crude	"Crude, Nogales"	NGL	Tiny
+UNK						-1	-1	7/16/2009	N	N	N	N		16/07/2009	Infra	"Infra, Nogales"	NGL	Tiny
+Incomplete	Right		UNK	UNK		-1	-1	7/29/2009	N	N	N	N			Crude	"Crude, Nogales"	NGL	Medium
+Incomplete	None	C2	Bldg	Bldg	Sandy Clay	32.54916667	116.9458333	6/1/1993	Y	Y	N	Y	C	1/6/1993	Sophisticated	Sophisticated	SoCal	Long
+UNK	Right	A3	Unk	Unk	Sandy Clay	-1	-1	8/1/1998	Y	Y	N	N	A	1/8/1998	Sophisticated	Sophisticated	SoCal	Short
+Incomplete	None	A1	Bldg	Unk	Sandy Clay	32.55027778	116.9373611	12/10/2002	Y	Y	N	Y	A	10/12/2002	Crude	"Crude, Other"	SoCal	Tiny
+Incomplete	Right	A1	Outside	Sewer	Sandy Clay	32.55104	116.92811	8/21/2004	N	N	N	N	A	21/08/2004	Infra	"Infra, Other"	SoCal	Tiny
+Incomplete	Right	A1	Outside	Sewer	Sandy Clay	32.551104	116.928199	11/16/2005	N	N	N	N	A	16/11/2005	Infra	"Infra, Other"	SoCal	Medium
+Incomplete	None	A1	Outside	Sewer	Sandy Clay	32.56013889	116.9604444	1/20/2006	N	Y	N	Y	A	20/01/2006	Infra	"Infra, Other"	SoCal	Medium
+Complete	None	C2	Bldg	Bldg	Sandy Clay	32.55384	116.96764	1/24/2006	Y	Y	Y	Y	C	24/01/2006	Sophisticated	Sophisticated	SoCal	Long
+Incomplete	None	A1	Outside	Sewer	Sandy Clay	32.54967	116.94531	1/31/2006	N	N	N	N	A	31/01/2006	Infra	"Infra, Other"	SoCal	Short
+Incomplete	None	A1	Outside	Sewer	Sandy Clay	32.54973	116.94357	1/31/2006	N	N	N	N	A	31/01/2006	Infra	"Infra, Other"	SoCal	Tiny
+Complete	None	B3	Sewer	Outside	Sandy Clay	32.55182	116.93008	10/10/2006	Y	N	N	N	B	10/10/2006	Infra	"Infra, Other"	SoCal	Long
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.549676	116.945439	3/28/2007	N	N	N	N	A	28/03/2007	Crude	"Crude, Other"	SoCal	Tiny
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.549546	116.946217	3/28/2007	N	N	N	N	A	28/03/2007	Crude	"Crude, Other"	SoCal	Tiny
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.55135	116.92788	6/21/2007	N	N	N	N	A	21/06/2007	Crude	"Crude, Other"	SoCal	Short
+Complete	NA		Sewer	Sewer		31.33261	110.94916	2/21/2009	N	N	N	N		21/02/2009	Infra	"Infra, Other"	SoCal	Tiny
+Incomplete	None	B2	Bldg	Unk	Sand	32.49138889	114.7711944	9/17/2007	Y	Y	Y	Y	B	17/09/2007	Sophisticated	Sophisticated	Other	Long
+Complete	None	C3	Bldg	Bldg	Sand	-1	-1	11/6/2008	N	N	N	N	C	6/11/2008	Sophisticated	Sophisticated	Other	Long
+Complete	Right	B2	Bldg	Sewer	Sandy Clay	32.542335	117.033292	4/4/2003	Y	Y	N	Y	B	4/4/2003	Infra	"Infra, Other"	SoCal	Long
+Incomplete	None	B2	Outside	Unk	Sandy Clay	-1	-1	7/2/2004	N	N	N	N	B	2/7/2004	Sophisticated	Sophisticated	SoCal	Short
+Complete	None	B1	Bldg	Sewer	Sandy Clay	-1	-1	7/7/2004	Y	Y	N	Y	B	7/7/2004	Infra	"Infra, Other"	SoCal	Long
+Complete	None	A2	Outside	Outside	Sandy Clay	32.542156	117.033833	1/9/2006	Y	N	N	N	A	9/1/2006	Sophisticated	Sophisticated	SoCal	Medium
+Incomplete	Right	A2	Outside	Unk	Sandy Clay	32.542044	117.035263	1/25/2006	Y	N	N	N	A	25/01/2006	Sophisticated	Sophisticated	SoCal	Short
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.542266	117.033035	2/9/2006	N	N	N	N	A	9/2/2006	Crude	"Crude, Other"	SoCal	Short
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.541832	117.037071	2/9/2006	N	N	N	N	A	9/2/2006	Crude	"Crude, Other"	SoCal	Short
+Complete	Right	A2	Unk	Outside	Sandy Clay	32.542367	117.033226	5/15/2006	Y	N	N	N	A	15/05/2006	Sophisticated	Sophisticated	SoCal	Medium
+Incomplete	Right	A1	Unk	Unk	Sandy Clay	32.542039	117.035219	5/16/2006	N	N	N	N	A	16/05/2006	Crude	"Crude, Other"	SoCal	Medium
+Incomplete	None	A1	Outside	Unk	Sandy Clay	32.542266	117.033035	5/25/2006	N	N	N	N	A	25/05/2006	Crude	"Crude, Other"	SoCal	Tiny
+Incomplete	None	B2	Outside	Outside	Sandy Clay	32.54216	117.03372	9/26/2006	Y	N	N	N	B	26/09/2006	Sophisticated	Sophisticated	SoCal	Medium
+Incomplete	None	A1	Outside	Unk	Sandy Clay	-1	-1	10/23/2006	N	N	N	N	A	23/10/2006	Infra	"Infra, Other"	SoCal	Tiny
+Incomplete	None	B1	Outside	Outside	Sandy Clay	32.54208	117.03478	12/10/2008	N	N	N	N	B	10/12/2008	Infra	"Infra, Other"	SoCal	Long
+Complete	Right					-1	-1	6/29/2009	N	N	N	N		29/06/2009	Crude	"Crude, Other"	SoCal	Long
+Complete	None	C2	Bldg	Bldg	Decomposed Granite	32.59972222	116.3463889	2/1/2002	Y	Y	N	Y	C	1/2/2002	Sophisticated	Sophisticated	Other	Long
+Incomplete	None	A2	Outside	Bldg	Decomposed Granite	32.60138889	116.3344444	6/6/2003	Y	N	N	N	A	6/6/2003	Sophisticated	Sophisticated	Other	Long
+Complete	None	C3	Bldg	Bldg	Decomposed Granite	31.57964	116.62936	12/3/2007	Y	Y	Y	Y	C	3/12/2007	Sophisticated	Sophisticated	Other	Long

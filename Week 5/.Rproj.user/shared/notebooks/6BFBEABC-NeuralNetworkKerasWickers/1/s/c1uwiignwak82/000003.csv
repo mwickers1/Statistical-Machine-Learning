@@ -1,0 +1,1207 @@
+"0","val.ind <- sample (18000, 2000, replace=F)"
+"0",""
+"0","history <- fit(mod,x = super.train[-val.ind,], y = super.train.y[-val.ind,],"
+"0","               validation_data = list (super.train[val.ind,], super.train.y[val.ind,]),"
+"0","               epochs=400, batch_size=18000)"
+"1","Train on 16000 samples, validate on 2000 samples
+Epoch 1/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 241.5902 - mean_squared_error: 229.6743 - val_loss: 241.7431 - val_mean_squared_error: 229.8173
+"
+"1","Epoch 2/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 241.9316 - mean_squared_error: 230.0058 - val_loss: 243.7993 - val_mean_squared_error: 231.8800
+"
+"1","Epoch 3/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 242.7470 - mean_squared_error: 230.8277 - val_loss: 244.9268 - val_mean_squared_error: 232.9900
+"
+"1","Epoch 4/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 245.4591 - mean_squared_error: 233.5222 - val_loss: 250.8721 - val_mean_squared_error: 238.9515
+"
+"1","Epoch 5/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 249.2169 - mean_squared_error: 237.2962 - val_loss: 259.1497 - val_mean_squared_error: 247.1940
+"
+"1","Epoch 6/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 261.3221 - mean_squared_error: 249.3664 - val_loss: 260.2255 - val_mean_squared_error: 248.3000
+"
+"1","Epoch 7/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 258.4838 - mean_squared_error: 246.5583 - val_loss: 264.1226 - val_mean_squared_error: 252.1512
+"
+"1","Epoch 8/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 267.4626 - mean_squared_error: 255.4911 - val_loss: 249.7389 - val_mean_squared_error: 237.7956
+"
+"1","Epoch 9/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 248.7483 - mean_squared_error: 236.8050 - val_loss: 242.1748 - val_mean_squared_error: 230.2084
+"
+"1","Epoch 10/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 243.3448 - mean_squared_error: 231.3784 - val_loss: 241.1440 - val_mean_squared_error: 229.1800
+"
+"1","Epoch 11/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 241.1445 - mean_squared_error: 229.1806 - val_loss: 240.9979 - val_mean_squared_error: 229.0300
+"
+"1","Epoch 12/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 240.6859 - mean_squared_error: 228.7180 - val_loss: 240.7300 - val_mean_squared_error: 228.7547
+"
+"1","Epoch 13/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 240.5902 - mean_squared_error: 228.6149 - val_loss: 241.6959 - val_mean_squared_error: 229.7228
+"
+"1","Epoch 14/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 240.5558 - mean_squared_error: 228.5828 - val_loss: 241.2672 - val_mean_squared_error: 229.2838
+"
+"1","Epoch 15/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 240.8117 - mean_squared_error: 228.8283 - val_loss: 242.9951 - val_mean_squared_error: 231.0178
+"
+"1","Epoch 16/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 241.3102 - mean_squared_error: 229.3329 - val_loss: 243.2702 - val_mean_squared_error: 231.2773
+"
+"1","Epoch 17/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 243.0488 - mean_squared_error: 231.0559 - val_loss: 247.3658 - val_mean_squared_error: 235.3860
+"
+"1","Epoch 18/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 245.2361 - mean_squared_error: 233.2562 - val_loss: 251.3225 - val_mean_squared_error: 239.3151
+"
+"1","Epoch 19/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 252.1991 - mean_squared_error: 240.1917 - val_loss: 255.6208 - val_mean_squared_error: 243.6375
+"
+"1","Epoch 20/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 253.2930 - mean_squared_error: 241.3097 - val_loss: 260.7500 - val_mean_squared_error: 248.7263
+"
+"1","Epoch 21/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 263.0366 - mean_squared_error: 251.0129 - val_loss: 251.6697 - val_mean_squared_error: 239.6739
+"
+"1","Epoch 22/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 249.8065 - mean_squared_error: 237.8107 - val_loss: 245.2156 - val_mean_squared_error: 233.1907
+"
+"1","Epoch 23/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 246.4220 - mean_squared_error: 234.3971 - val_loss: 242.7170 - val_mean_squared_error: 230.7038
+"
+"1","Epoch 24/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 241.6095 - mean_squared_error: 229.5963 - val_loss: 240.0316 - val_mean_squared_error: 228.0057
+"
+"1","Epoch 25/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 239.8484 - mean_squared_error: 227.8226 - val_loss: 240.0249 - val_mean_squared_error: 227.9991
+"
+"1","Epoch 26/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 239.0868 - mean_squared_error: 227.0610 - val_loss: 239.8211 - val_mean_squared_error: 227.7910
+"
+"1","Epoch 27/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.7433 - mean_squared_error: 226.7132 - val_loss: 239.7859 - val_mean_squared_error: 227.7523
+"
+"1","Epoch 28/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.5350 - mean_squared_error: 226.5014 - val_loss: 239.9571 - val_mean_squared_error: 227.9217
+"
+"1","Epoch 29/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 238.3843 - mean_squared_error: 226.3488 - val_loss: 239.7461 - val_mean_squared_error: 227.7059
+"
+"1","Epoch 30/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.2761 - mean_squared_error: 226.2359 - val_loss: 240.0709 - val_mean_squared_error: 228.0304
+"
+"1","Epoch 31/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.2172 - mean_squared_error: 226.1767 - val_loss: 239.7327 - val_mean_squared_error: 227.6857
+"
+"1","Epoch 32/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.2619 - mean_squared_error: 226.2149 - val_loss: 240.5889 - val_mean_squared_error: 228.5443
+"
+"1","Epoch 33/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.4771 - mean_squared_error: 226.4325 - val_loss: 240.4198 - val_mean_squared_error: 228.3645
+"
+"1","Epoch 34/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 239.2162 - mean_squared_error: 227.1608 - val_loss: 243.0805 - val_mean_squared_error: 231.0332
+"
+"1","Epoch 35/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 240.6025 - mean_squared_error: 228.5552 - val_loss: 245.0453 - val_mean_squared_error: 232.9774
+"
+"1","Epoch 36/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 244.6918 - mean_squared_error: 232.6240 - val_loss: 251.5115 - val_mean_squared_error: 239.4625
+"
+"1","Epoch 37/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 248.6542 - mean_squared_error: 236.6053 - val_loss: 259.6224 - val_mean_squared_error: 247.5358
+"
+"1","Epoch 38/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 261.1385 - mean_squared_error: 249.0519 - val_loss: 255.4839 - val_mean_squared_error: 243.4272
+"
+"1","Epoch 39/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 252.8132 - mean_squared_error: 240.7565 - val_loss: 253.1253 - val_mean_squared_error: 241.0302
+"
+"1","Epoch 40/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 254.7784 - mean_squared_error: 242.6834 - val_loss: 245.8917 - val_mean_squared_error: 233.8183
+"
+"1","Epoch 41/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 243.9678 - mean_squared_error: 231.8945 - val_loss: 240.1168 - val_mean_squared_error: 228.0228
+"
+"1","Epoch 42/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 240.2039 - mean_squared_error: 228.1098 - val_loss: 239.3779 - val_mean_squared_error: 227.2882
+"
+"1","Epoch 43/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.0938 - mean_squared_error: 226.0041 - val_loss: 238.5551 - val_mean_squared_error: 226.4590
+"
+"1","Epoch 44/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 237.3875 - mean_squared_error: 225.2914 - val_loss: 238.5291 - val_mean_squared_error: 226.4295
+"
+"1","Epoch 45/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 237.1075 - mean_squared_error: 225.0078 - val_loss: 238.8253 - val_mean_squared_error: 226.7243
+"
+"1","Epoch 46/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 236.9493 - mean_squared_error: 224.8483 - val_loss: 238.5680 - val_mean_squared_error: 226.4614
+"
+"1","Epoch 47/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.8592 - mean_squared_error: 224.7526 - val_loss: 239.1045 - val_mean_squared_error: 226.9986
+"
+"1","Epoch 48/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.8352 - mean_squared_error: 224.7293 - val_loss: 238.7130 - val_mean_squared_error: 226.5995
+"
+"1","Epoch 49/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.9642 - mean_squared_error: 224.8507 - val_loss: 239.8525 - val_mean_squared_error: 227.7425
+"
+"1","Epoch 50/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 237.2831 - mean_squared_error: 225.1731 - val_loss: 239.7176 - val_mean_squared_error: 227.5956
+"
+"1","Epoch 51/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.2534 - mean_squared_error: 226.1315 - val_loss: 242.6622 - val_mean_squared_error: 230.5494
+"
+"1","Epoch 52/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 239.7340 - mean_squared_error: 227.6212 - val_loss: 244.5919 - val_mean_squared_error: 232.4579
+"
+"1","Epoch 53/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 243.9779 - mean_squared_error: 231.8438 - val_loss: 250.0667 - val_mean_squared_error: 237.9516
+"
+"1","Epoch 54/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 246.8301 - mean_squared_error: 234.7150 - val_loss: 255.8045 - val_mean_squared_error: 243.6542
+"
+"1","Epoch 55/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 256.7275 - mean_squared_error: 244.5772 - val_loss: 252.8842 - val_mean_squared_error: 240.7613
+"
+"1","Epoch 56/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 249.8386 - mean_squared_error: 237.7157 - val_loss: 250.1956 - val_mean_squared_error: 238.0375
+"
+"1","Epoch 57/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 251.2015 - mean_squared_error: 239.0434 - val_loss: 244.5393 - val_mean_squared_error: 232.4013
+"
+"1","Epoch 58/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 242.1507 - mean_squared_error: 230.0127 - val_loss: 239.2579 - val_mean_squared_error: 227.0997
+"
+"1","Epoch 59/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.9034 - mean_squared_error: 226.7453 - val_loss: 238.6156 - val_mean_squared_error: 226.4630
+"
+"1","Epoch 60/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 236.7526 - mean_squared_error: 224.5999 - val_loss: 237.4421 - val_mean_squared_error: 225.2815
+"
+"1","Epoch 61/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.9436 - mean_squared_error: 223.7831 - val_loss: 237.5529 - val_mean_squared_error: 225.3909
+"
+"1","Epoch 62/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.5820 - mean_squared_error: 223.4200 - val_loss: 237.5236 - val_mean_squared_error: 225.3583
+"
+"1","Epoch 63/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 235.3740 - mean_squared_error: 223.2088 - val_loss: 237.4686 - val_mean_squared_error: 225.3000
+"
+"1","Epoch 64/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 235.2225 - mean_squared_error: 223.0540 - val_loss: 237.5777 - val_mean_squared_error: 225.4073
+"
+"1","Epoch 65/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.1004 - mean_squared_error: 222.9300 - val_loss: 237.3896 - val_mean_squared_error: 225.2152
+"
+"1","Epoch 66/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.0005 - mean_squared_error: 222.8261 - val_loss: 237.5896 - val_mean_squared_error: 225.4143
+"
+"1","Epoch 67/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 234.9244 - mean_squared_error: 222.7491 - val_loss: 237.2904 - val_mean_squared_error: 225.1100
+"
+"1","Epoch 68/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 234.8908 - mean_squared_error: 222.7104 - val_loss: 237.7697 - val_mean_squared_error: 225.5900
+"
+"1","Epoch 69/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 234.9242 - mean_squared_error: 222.7444 - val_loss: 237.4000 - val_mean_squared_error: 225.2127
+"
+"1","Epoch 70/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.1339 - mean_squared_error: 222.9467 - val_loss: 238.6857 - val_mean_squared_error: 226.5023
+"
+"1","Epoch 71/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.5872 - mean_squared_error: 223.4038 - val_loss: 238.7115 - val_mean_squared_error: 226.5155
+"
+"1","Epoch 72/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 236.8560 - mean_squared_error: 224.6600 - val_loss: 242.1479 - val_mean_squared_error: 229.9621
+"
+"1","Epoch 73/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.6937 - mean_squared_error: 226.5078 - val_loss: 244.6983 - val_mean_squared_error: 232.4896
+"
+"1","Epoch 74/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 243.8478 - mean_squared_error: 231.6391 - val_loss: 250.2650 - val_mean_squared_error: 238.0767
+"
+"1","Epoch 75/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 246.5468 - mean_squared_error: 234.3585 - val_loss: 255.9149 - val_mean_squared_error: 243.6901
+"
+"1","Epoch 76/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 256.6208 - mean_squared_error: 244.3961 - val_loss: 250.8440 - val_mean_squared_error: 238.6467
+"
+"1","Epoch 77/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 247.4200 - mean_squared_error: 235.2227 - val_loss: 246.4699 - val_mean_squared_error: 234.2399
+"
+"1","Epoch 78/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 246.8319 - mean_squared_error: 234.6019 - val_loss: 242.0949 - val_mean_squared_error: 229.8825
+"
+"1","Epoch 79/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 239.3335 - mean_squared_error: 227.1211 - val_loss: 237.4948 - val_mean_squared_error: 225.2643
+"
+"1","Epoch 80/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.5327 - mean_squared_error: 224.3023 - val_loss: 237.1497 - val_mean_squared_error: 224.9240
+"
+"1","Epoch 81/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 234.7926 - mean_squared_error: 222.5669 - val_loss: 236.1185 - val_mean_squared_error: 223.8853
+"
+"1","Epoch 82/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 234.1054 - mean_squared_error: 221.8723 - val_loss: 236.2807 - val_mean_squared_error: 224.0464
+"
+"1","Epoch 83/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.7747 - mean_squared_error: 221.5405 - val_loss: 236.1717 - val_mean_squared_error: 223.9338
+"
+"1","Epoch 84/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 233.5759 - mean_squared_error: 221.3380 - val_loss: 236.1926 - val_mean_squared_error: 223.9522
+"
+"1","Epoch 85/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 233.4283 - mean_squared_error: 221.1879 - val_loss: 236.1792 - val_mean_squared_error: 223.9362
+"
+"1","Epoch 86/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.3054 - mean_squared_error: 221.0624 - val_loss: 236.1152 - val_mean_squared_error: 223.8694
+"
+"1","Epoch 87/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 233.1957 - mean_squared_error: 220.9499 - val_loss: 236.1057 - val_mean_squared_error: 223.8576
+"
+"1","Epoch 88/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 233.0939 - mean_squared_error: 220.8458 - val_loss: 235.9930 - val_mean_squared_error: 223.7420
+"
+"1","Epoch 89/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.9970 - mean_squared_error: 220.7459 - val_loss: 236.0090 - val_mean_squared_error: 223.7560
+"
+"1","Epoch 90/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.9045 - mean_squared_error: 220.6515 - val_loss: 235.8420 - val_mean_squared_error: 223.5855
+"
+"1","Epoch 91/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.8182 - mean_squared_error: 220.5617 - val_loss: 235.9356 - val_mean_squared_error: 223.6777
+"
+"1","Epoch 92/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 232.7418 - mean_squared_error: 220.4838 - val_loss: 235.6874 - val_mean_squared_error: 223.4252
+"
+"1","Epoch 93/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.6864 - mean_squared_error: 220.4241 - val_loss: 235.9828 - val_mean_squared_error: 223.7202
+"
+"1","Epoch 94/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.6684 - mean_squared_error: 220.4057 - val_loss: 235.6378 - val_mean_squared_error: 223.3692
+"
+"1","Epoch 95/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.7420 - mean_squared_error: 220.4733 - val_loss: 236.4749 - val_mean_squared_error: 224.2083
+"
+"1","Epoch 96/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.9627 - mean_squared_error: 220.6960 - val_loss: 236.2212 - val_mean_squared_error: 223.9448
+"
+"1","Epoch 97/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.6113 - mean_squared_error: 221.3349 - val_loss: 238.5673 - val_mean_squared_error: 226.2978
+"
+"1","Epoch 98/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 234.7366 - mean_squared_error: 222.4671 - val_loss: 239.6729 - val_mean_squared_error: 227.3860
+"
+"1","Epoch 99/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 237.7798 - mean_squared_error: 225.4929 - val_loss: 245.1303 - val_mean_squared_error: 232.8589
+"
+"1","Epoch 100/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 240.9324 - mean_squared_error: 228.6610 - val_loss: 250.5159 - val_mean_squared_error: 238.2138
+"
+"1","Epoch 101/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 250.1071 - mean_squared_error: 237.8051 - val_loss: 251.8540 - val_mean_squared_error: 239.5775
+"
+"1","Epoch 102/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 247.6651 - mean_squared_error: 235.3886 - val_loss: 253.0390 - val_mean_squared_error: 240.7253
+"
+"1","Epoch 103/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 253.4453 - mean_squared_error: 241.1317 - val_loss: 245.2876 - val_mean_squared_error: 232.9980
+"
+"1","Epoch 104/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 241.6693 - mean_squared_error: 229.3797 - val_loss: 238.7987 - val_mean_squared_error: 226.4846
+"
+"1","Epoch 105/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 237.9742 - mean_squared_error: 225.6600 - val_loss: 237.0609 - val_mean_squared_error: 224.7565
+"
+"1","Epoch 106/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 234.0826 - mean_squared_error: 221.7782 - val_loss: 234.7289 - val_mean_squared_error: 222.4137
+"
+"1","Epoch 107/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.6078 - mean_squared_error: 220.2925 - val_loss: 234.8516 - val_mean_squared_error: 222.5369
+"
+"1","Epoch 108/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.9578 - mean_squared_error: 219.6431 - val_loss: 234.5841 - val_mean_squared_error: 222.2652
+"
+"1","Epoch 109/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 231.6621 - mean_squared_error: 219.3432 - val_loss: 234.6223 - val_mean_squared_error: 222.3009
+"
+"1","Epoch 110/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 231.4829 - mean_squared_error: 219.1615 - val_loss: 234.6714 - val_mean_squared_error: 222.3477
+"
+"1","Epoch 111/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.3489 - mean_squared_error: 219.0252 - val_loss: 234.5692 - val_mean_squared_error: 222.2424
+"
+"1","Epoch 112/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.2387 - mean_squared_error: 218.9118 - val_loss: 234.6702 - val_mean_squared_error: 222.3418
+"
+"1","Epoch 113/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.1447 - mean_squared_error: 218.8163 - val_loss: 234.4787 - val_mean_squared_error: 222.1466
+"
+"1","Epoch 114/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.0655 - mean_squared_error: 218.7333 - val_loss: 234.6703 - val_mean_squared_error: 222.3373
+"
+"1","Epoch 115/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.0032 - mean_squared_error: 218.6702 - val_loss: 234.3815 - val_mean_squared_error: 222.0438
+"
+"1","Epoch 116/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.9728 - mean_squared_error: 218.6351 - val_loss: 234.8066 - val_mean_squared_error: 222.4693
+"
+"1","Epoch 117/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.9901 - mean_squared_error: 218.6528 - val_loss: 234.4229 - val_mean_squared_error: 222.0790
+"
+"1","Epoch 118/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.1272 - mean_squared_error: 218.7833 - val_loss: 235.4509 - val_mean_squared_error: 223.1099
+"
+"1","Epoch 119/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.4262 - mean_squared_error: 219.0852 - val_loss: 235.2005 - val_mean_squared_error: 222.8489
+"
+"1","Epoch 120/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 232.2146 - mean_squared_error: 219.8631 - val_loss: 237.7047 - val_mean_squared_error: 225.3608
+"
+"1","Epoch 121/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.3791 - mean_squared_error: 221.0352 - val_loss: 238.7359 - val_mean_squared_error: 226.3742
+"
+"1","Epoch 122/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 236.4561 - mean_squared_error: 224.0943 - val_loss: 243.5838 - val_mean_squared_error: 231.2376
+"
+"1","Epoch 123/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 238.9483 - mean_squared_error: 226.6021 - val_loss: 247.4528 - val_mean_squared_error: 235.0776
+"
+"1","Epoch 124/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 246.4192 - mean_squared_error: 234.0440 - val_loss: 248.9182 - val_mean_squared_error: 236.5669
+"
+"1","Epoch 125/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 244.3011 - mean_squared_error: 231.9498 - val_loss: 249.1378 - val_mean_squared_error: 236.7524
+"
+"1","Epoch 126/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 248.7545 - mean_squared_error: 236.3691 - val_loss: 243.7216 - val_mean_squared_error: 231.3587
+"
+"1","Epoch 127/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 239.5805 - mean_squared_error: 227.2176 - val_loss: 238.0145 - val_mean_squared_error: 225.6273
+"
+"1","Epoch 128/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 236.6732 - mean_squared_error: 224.2861 - val_loss: 236.4132 - val_mean_squared_error: 224.0370
+"
+"1","Epoch 129/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.8077 - mean_squared_error: 220.4316 - val_loss: 233.7419 - val_mean_squared_error: 221.3534
+"
+"1","Epoch 130/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.2561 - mean_squared_error: 218.8677 - val_loss: 233.9168 - val_mean_squared_error: 221.5309
+"
+"1","Epoch 131/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.4239 - mean_squared_error: 218.0379 - val_loss: 233.2800 - val_mean_squared_error: 220.8881
+"
+"1","Epoch 132/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.0441 - mean_squared_error: 217.6522 - val_loss: 233.5050 - val_mean_squared_error: 221.1125
+"
+"1","Epoch 133/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.8246 - mean_squared_error: 217.4321 - val_loss: 233.2856 - val_mean_squared_error: 220.8891
+"
+"1","Epoch 134/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.6770 - mean_squared_error: 217.2805 - val_loss: 233.4415 - val_mean_squared_error: 221.0437
+"
+"1","Epoch 135/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.5642 - mean_squared_error: 217.1664 - val_loss: 233.2395 - val_mean_squared_error: 220.8380
+"
+"1","Epoch 136/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.4740 - mean_squared_error: 217.0724 - val_loss: 233.4295 - val_mean_squared_error: 221.0270
+"
+"1","Epoch 137/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.4012 - mean_squared_error: 216.9987 - val_loss: 233.1595 - val_mean_squared_error: 220.7527
+"
+"1","Epoch 138/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.3515 - mean_squared_error: 216.9447 - val_loss: 233.4988 - val_mean_squared_error: 221.0920
+"
+"1","Epoch 139/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.3312 - mean_squared_error: 216.9243 - val_loss: 233.1298 - val_mean_squared_error: 220.7172
+"
+"1","Epoch 140/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.3751 - mean_squared_error: 216.9625 - val_loss: 233.8354 - val_mean_squared_error: 221.4246
+"
+"1","Epoch 141/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.5008 - mean_squared_error: 217.0900 - val_loss: 233.4239 - val_mean_squared_error: 221.0048
+"
+"1","Epoch 142/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.8544 - mean_squared_error: 217.4352 - val_loss: 234.9713 - val_mean_squared_error: 222.5571
+"
+"1","Epoch 143/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.4063 - mean_squared_error: 217.9921 - val_loss: 234.9248 - val_mean_squared_error: 222.4976
+"
+"1","Epoch 144/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 231.7705 - mean_squared_error: 219.3433 - val_loss: 238.1769 - val_mean_squared_error: 225.7601
+"
+"1","Epoch 145/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 233.3192 - mean_squared_error: 220.9024 - val_loss: 239.6967 - val_mean_squared_error: 227.2590
+"
+"1","Epoch 146/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 237.3596 - mean_squared_error: 224.9219 - val_loss: 243.8986 - val_mean_squared_error: 231.4786
+"
+"1","Epoch 147/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 238.8447 - mean_squared_error: 226.4248 - val_loss: 246.5193 - val_mean_squared_error: 234.0697
+"
+"1","Epoch 148/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 245.2131 - mean_squared_error: 232.7635 - val_loss: 245.5668 - val_mean_squared_error: 233.1399
+"
+"1","Epoch 149/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 240.6722 - mean_squared_error: 228.2453 - val_loss: 242.9144 - val_mean_squared_error: 230.4582
+"
+"1","Epoch 150/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 241.6420 - mean_squared_error: 229.1858 - val_loss: 239.8528 - val_mean_squared_error: 227.4147
+"
+"1","Epoch 151/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.3975 - mean_squared_error: 222.9594 - val_loss: 235.2674 - val_mean_squared_error: 222.8092
+"
+"1","Epoch 152/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.1187 - mean_squared_error: 220.6606 - val_loss: 234.6302 - val_mean_squared_error: 222.1810
+"
+"1","Epoch 153/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 230.5329 - mean_squared_error: 218.0836 - val_loss: 232.5122 - val_mean_squared_error: 220.0518
+"
+"1","Epoch 154/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.4509 - mean_squared_error: 216.9905 - val_loss: 232.8587 - val_mean_squared_error: 220.4012
+"
+"1","Epoch 155/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.7826 - mean_squared_error: 216.3252 - val_loss: 232.0958 - val_mean_squared_error: 219.6316
+"
+"1","Epoch 156/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.4631 - mean_squared_error: 215.9989 - val_loss: 232.5006 - val_mean_squared_error: 220.0372
+"
+"1","Epoch 157/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.2618 - mean_squared_error: 215.7984 - val_loss: 232.0518 - val_mean_squared_error: 219.5828
+"
+"1","Epoch 158/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.1500 - mean_squared_error: 215.6811 - val_loss: 232.4975 - val_mean_squared_error: 220.0293
+"
+"1","Epoch 159/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.0798 - mean_squared_error: 215.6116 - val_loss: 232.0586 - val_mean_squared_error: 219.5844
+"
+"1","Epoch 160/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.0758 - mean_squared_error: 215.6016 - val_loss: 232.7060 - val_mean_squared_error: 220.2335
+"
+"1","Epoch 161/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.1143 - mean_squared_error: 215.6418 - val_loss: 232.2137 - val_mean_squared_error: 219.7337
+"
+"1","Epoch 162/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.2889 - mean_squared_error: 215.8089 - val_loss: 233.3270 - val_mean_squared_error: 220.8508
+"
+"1","Epoch 163/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.5428 - mean_squared_error: 216.0666 - val_loss: 232.8952 - val_mean_squared_error: 220.4086
+"
+"1","Epoch 164/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.1923 - mean_squared_error: 216.7057 - val_loss: 234.9303 - val_mean_squared_error: 222.4509
+"
+"1","Epoch 165/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.9169 - mean_squared_error: 217.4374 - val_loss: 234.9988 - val_mean_squared_error: 222.5041
+"
+"1","Epoch 166/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.7537 - mean_squared_error: 219.2590 - val_loss: 238.3014 - val_mean_squared_error: 225.8189
+"
+"1","Epoch 167/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 233.0583 - mean_squared_error: 220.5757 - val_loss: 239.3547 - val_mean_squared_error: 226.8503
+"
+"1","Epoch 168/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.8328 - mean_squared_error: 224.3285 - val_loss: 242.0463 - val_mean_squared_error: 229.5595
+"
+"1","Epoch 169/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.7272 - mean_squared_error: 224.2403 - val_loss: 242.2322 - val_mean_squared_error: 229.7188
+"
+"1","Epoch 170/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 240.2919 - mean_squared_error: 227.7785 - val_loss: 241.4697 - val_mean_squared_error: 228.9754
+"
+"1","Epoch 171/400
+16000/16000 [==============================] - 0s 25us/sample - loss: 236.3411 - mean_squared_error: 223.8468 - val_loss: 238.3780 - val_mean_squared_error: 225.8594
+"
+"1","Epoch 172/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 236.2578 - mean_squared_error: 223.7392 - val_loss: 237.0747 - val_mean_squared_error: 224.5708
+"
+"1","Epoch 173/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.2688 - mean_squared_error: 219.7649 - val_loss: 233.5944 - val_mean_squared_error: 221.0730
+"
+"1","Epoch 174/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.7883 - mean_squared_error: 218.2670 - val_loss: 233.5916 - val_mean_squared_error: 221.0786
+"
+"1","Epoch 175/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.9962 - mean_squared_error: 216.4832 - val_loss: 231.6990 - val_mean_squared_error: 219.1746
+"
+"1","Epoch 176/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.2400 - mean_squared_error: 215.7156 - val_loss: 232.2362 - val_mean_squared_error: 219.7160
+"
+"1","Epoch 177/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.6326 - mean_squared_error: 215.1124 - val_loss: 231.2401 - val_mean_squared_error: 218.7117
+"
+"1","Epoch 178/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.3671 - mean_squared_error: 214.8387 - val_loss: 231.8938 - val_mean_squared_error: 219.3681
+"
+"1","Epoch 179/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.1676 - mean_squared_error: 214.6419 - val_loss: 231.1870 - val_mean_squared_error: 218.6537
+"
+"1","Epoch 180/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.1262 - mean_squared_error: 214.5930 - val_loss: 231.9886 - val_mean_squared_error: 219.4582
+"
+"1","Epoch 181/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.1066 - mean_squared_error: 214.5762 - val_loss: 231.3394 - val_mean_squared_error: 218.8007
+"
+"1","Epoch 182/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.2572 - mean_squared_error: 214.7185 - val_loss: 232.4666 - val_mean_squared_error: 219.9321
+"
+"1","Epoch 183/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.4144 - mean_squared_error: 214.8800 - val_loss: 231.8554 - val_mean_squared_error: 219.3107
+"
+"1","Epoch 184/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.8980 - mean_squared_error: 215.3532 - val_loss: 233.5550 - val_mean_squared_error: 221.0168
+"
+"1","Epoch 185/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.3190 - mean_squared_error: 215.7808 - val_loss: 233.1300 - val_mean_squared_error: 220.5782
+"
+"1","Epoch 186/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.4582 - mean_squared_error: 216.9065 - val_loss: 235.5468 - val_mean_squared_error: 223.0050
+"
+"1","Epoch 187/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.1328 - mean_squared_error: 217.5911 - val_loss: 235.4783 - val_mean_squared_error: 222.9187
+"
+"1","Epoch 188/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 232.2476 - mean_squared_error: 219.6879 - val_loss: 238.0253 - val_mean_squared_error: 225.4795
+"
+"1","Epoch 189/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 232.5051 - mean_squared_error: 219.9592 - val_loss: 237.7922 - val_mean_squared_error: 225.2244
+"
+"1","Epoch 190/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 235.0040 - mean_squared_error: 222.4362 - val_loss: 238.9884 - val_mean_squared_error: 226.4369
+"
+"1","Epoch 191/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 233.5113 - mean_squared_error: 220.9598 - val_loss: 237.2735 - val_mean_squared_error: 224.6993
+"
+"1","Epoch 192/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 234.5998 - mean_squared_error: 222.0257 - val_loss: 237.1536 - val_mean_squared_error: 224.5947
+"
+"1","Epoch 193/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.8523 - mean_squared_error: 219.2933 - val_loss: 234.3071 - val_mean_squared_error: 221.7287
+"
+"1","Epoch 194/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 231.3246 - mean_squared_error: 218.7462 - val_loss: 234.3360 - val_mean_squared_error: 221.7690
+"
+"1","Epoch 195/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 229.2189 - mean_squared_error: 216.6519 - val_loss: 231.9344 - val_mean_squared_error: 219.3526
+"
+"1","Epoch 196/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.4755 - mean_squared_error: 215.8937 - val_loss: 232.4608 - val_mean_squared_error: 219.8866
+"
+"1","Epoch 197/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.4221 - mean_squared_error: 214.8478 - val_loss: 230.8918 - val_mean_squared_error: 218.3063
+"
+"1","Epoch 198/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.0323 - mean_squared_error: 214.4468 - val_loss: 231.6622 - val_mean_squared_error: 219.0820
+"
+"1","Epoch 199/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 226.5877 - mean_squared_error: 214.0075 - val_loss: 230.5803 - val_mean_squared_error: 217.9903
+"
+"1","Epoch 200/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.4815 - mean_squared_error: 213.8915 - val_loss: 231.5096 - val_mean_squared_error: 218.9242
+"
+"1","Epoch 201/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.3338 - mean_squared_error: 213.7485 - val_loss: 230.6271 - val_mean_squared_error: 218.0320
+"
+"1","Epoch 202/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 226.4436 - mean_squared_error: 213.8485 - val_loss: 231.7676 - val_mean_squared_error: 219.1777
+"
+"1","Epoch 203/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 226.4641 - mean_squared_error: 213.8742 - val_loss: 230.9609 - val_mean_squared_error: 218.3602
+"
+"1","Epoch 204/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.8163 - mean_squared_error: 214.2157 - val_loss: 232.4512 - val_mean_squared_error: 219.8572
+"
+"1","Epoch 205/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.0079 - mean_squared_error: 214.4138 - val_loss: 231.7256 - val_mean_squared_error: 219.1188
+"
+"1","Epoch 206/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 227.7387 - mean_squared_error: 215.1319 - val_loss: 233.5969 - val_mean_squared_error: 220.9988
+"
+"1","Epoch 207/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.0208 - mean_squared_error: 215.4227 - val_loss: 232.9526 - val_mean_squared_error: 220.3391
+"
+"1","Epoch 208/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 229.2131 - mean_squared_error: 216.5997 - val_loss: 235.0439 - val_mean_squared_error: 222.4416
+"
+"1","Epoch 209/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 229.3693 - mean_squared_error: 216.7670 - val_loss: 234.3330 - val_mean_squared_error: 221.7126
+"
+"1","Epoch 210/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 230.8717 - mean_squared_error: 218.2513 - val_loss: 236.0602 - val_mean_squared_error: 223.4529
+"
+"1","Epoch 211/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 230.3603 - mean_squared_error: 217.7530 - val_loss: 234.8051 - val_mean_squared_error: 222.1783
+"
+"1","Epoch 212/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 231.5083 - mean_squared_error: 218.8815 - val_loss: 235.7148 - val_mean_squared_error: 223.1014
+"
+"1","Epoch 213/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 230.0798 - mean_squared_error: 217.4665 - val_loss: 233.6982 - val_mean_squared_error: 221.0663
+"
+"1","Epoch 214/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 230.3278 - mean_squared_error: 217.6958 - val_loss: 234.2252 - val_mean_squared_error: 221.6051
+"
+"1","Epoch 215/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.6996 - mean_squared_error: 216.0795 - val_loss: 232.0279 - val_mean_squared_error: 219.3917
+"
+"1","Epoch 216/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.4035 - mean_squared_error: 215.7673 - val_loss: 232.6505 - val_mean_squared_error: 220.0238
+"
+"1","Epoch 217/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.2088 - mean_squared_error: 214.5820 - val_loss: 230.8106 - val_mean_squared_error: 218.1703
+"
+"1","Epoch 218/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.8916 - mean_squared_error: 214.2513 - val_loss: 231.6172 - val_mean_squared_error: 218.9843
+"
+"1","Epoch 219/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 226.1960 - mean_squared_error: 213.5631 - val_loss: 230.1987 - val_mean_squared_error: 217.5542
+"
+"1","Epoch 220/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.0471 - mean_squared_error: 213.4026 - val_loss: 231.1416 - val_mean_squared_error: 218.5033
+"
+"1","Epoch 221/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.6831 - mean_squared_error: 213.0448 - val_loss: 229.9952 - val_mean_squared_error: 217.3460
+"
+"1","Epoch 222/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 225.7078 - mean_squared_error: 213.0586 - val_loss: 231.0712 - val_mean_squared_error: 218.4279
+"
+"1","Epoch 223/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 225.5397 - mean_squared_error: 212.8964 - val_loss: 230.0621 - val_mean_squared_error: 217.4079
+"
+"1","Epoch 224/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.7330 - mean_squared_error: 213.0788 - val_loss: 231.3103 - val_mean_squared_error: 218.6625
+"
+"1","Epoch 225/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.6886 - mean_squared_error: 213.0408 - val_loss: 230.3637 - val_mean_squared_error: 217.7041
+"
+"1","Epoch 226/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.0741 - mean_squared_error: 213.4145 - val_loss: 231.8155 - val_mean_squared_error: 219.1633
+"
+"1","Epoch 227/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.1003 - mean_squared_error: 213.4481 - val_loss: 230.8919 - val_mean_squared_error: 218.2266
+"
+"1","Epoch 228/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.7060 - mean_squared_error: 214.0407 - val_loss: 232.5399 - val_mean_squared_error: 219.8833
+"
+"1","Epoch 229/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.7395 - mean_squared_error: 214.0830 - val_loss: 231.5958 - val_mean_squared_error: 218.9246
+"
+"1","Epoch 230/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.5566 - mean_squared_error: 214.8853 - val_loss: 233.2379 - val_mean_squared_error: 220.5768
+"
+"1","Epoch 231/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.3820 - mean_squared_error: 214.7208 - val_loss: 232.1272 - val_mean_squared_error: 219.4500
+"
+"1","Epoch 232/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 228.2150 - mean_squared_error: 215.5379 - val_loss: 233.5570 - val_mean_squared_error: 220.8907
+"
+"1","Epoch 233/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 227.6882 - mean_squared_error: 215.0219 - val_loss: 232.1876 - val_mean_squared_error: 219.5049
+"
+"1","Epoch 234/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 228.3323 - mean_squared_error: 215.6496 - val_loss: 233.3296 - val_mean_squared_error: 220.6578
+"
+"1","Epoch 235/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.4839 - mean_squared_error: 214.8121 - val_loss: 231.6863 - val_mean_squared_error: 218.9986
+"
+"1","Epoch 236/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 227.7863 - mean_squared_error: 215.0986 - val_loss: 232.6298 - val_mean_squared_error: 219.9522
+"
+"1","Epoch 237/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.8268 - mean_squared_error: 214.1492 - val_loss: 230.8716 - val_mean_squared_error: 218.1792
+"
+"1","Epoch 238/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 226.8388 - mean_squared_error: 214.1465 - val_loss: 231.7927 - val_mean_squared_error: 219.1093
+"
+"1","Epoch 239/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 226.0258 - mean_squared_error: 213.3424 - val_loss: 230.1621 - val_mean_squared_error: 217.4654
+"
+"1","Epoch 240/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.9695 - mean_squared_error: 213.2728 - val_loss: 231.1039 - val_mean_squared_error: 218.4149
+"
+"1","Epoch 241/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.3492 - mean_squared_error: 212.6602 - val_loss: 229.6621 - val_mean_squared_error: 216.9609
+"
+"1","Epoch 242/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.3208 - mean_squared_error: 212.6196 - val_loss: 230.6669 - val_mean_squared_error: 217.9726
+"
+"1","Epoch 243/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.8970 - mean_squared_error: 212.2027 - val_loss: 229.3992 - val_mean_squared_error: 216.6934
+"
+"1","Epoch 244/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.9518 - mean_squared_error: 212.2460 - val_loss: 230.4994 - val_mean_squared_error: 217.8001
+"
+"1","Epoch 245/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.6892 - mean_squared_error: 211.9899 - val_loss: 229.3653 - val_mean_squared_error: 216.6547
+"
+"1","Epoch 246/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.8709 - mean_squared_error: 212.1602 - val_loss: 230.5539 - val_mean_squared_error: 217.8500
+"
+"1","Epoch 247/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.6883 - mean_squared_error: 211.9844 - val_loss: 229.4715 - val_mean_squared_error: 216.7558
+"
+"1","Epoch 248/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.9753 - mean_squared_error: 212.2596 - val_loss: 230.7773 - val_mean_squared_error: 218.0688
+"
+"1","Epoch 249/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 224.8509 - mean_squared_error: 212.1425 - val_loss: 229.6957 - val_mean_squared_error: 216.9749
+"
+"1","Epoch 250/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.2357 - mean_squared_error: 212.5148 - val_loss: 231.0497 - val_mean_squared_error: 218.3367
+"
+"1","Epoch 251/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.0714 - mean_squared_error: 212.3584 - val_loss: 229.9462 - val_mean_squared_error: 217.2202
+"
+"1","Epoch 252/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.5376 - mean_squared_error: 212.8116 - val_loss: 231.3226 - val_mean_squared_error: 218.6050
+"
+"1","Epoch 253/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.3030 - mean_squared_error: 212.5854 - val_loss: 230.1262 - val_mean_squared_error: 217.3949
+"
+"1","Epoch 254/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.7631 - mean_squared_error: 213.0318 - val_loss: 231.4416 - val_mean_squared_error: 218.7193
+"
+"1","Epoch 255/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.4003 - mean_squared_error: 212.6779 - val_loss: 230.1380 - val_mean_squared_error: 217.4017
+"
+"1","Epoch 256/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 225.7933 - mean_squared_error: 213.0570 - val_loss: 231.3576 - val_mean_squared_error: 218.6302
+"
+"1","Epoch 257/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.3110 - mean_squared_error: 212.5836 - val_loss: 229.9580 - val_mean_squared_error: 217.2169
+"
+"1","Epoch 258/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.5942 - mean_squared_error: 212.8530 - val_loss: 231.1160 - val_mean_squared_error: 218.3835
+"
+"1","Epoch 259/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.0719 - mean_squared_error: 212.3395 - val_loss: 229.6782 - val_mean_squared_error: 216.9322
+"
+"1","Epoch 260/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 225.2673 - mean_squared_error: 212.5214 - val_loss: 230.7818 - val_mean_squared_error: 218.0442
+"
+"1","Epoch 261/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 224.7414 - mean_squared_error: 212.0039 - val_loss: 229.3703 - val_mean_squared_error: 216.6198
+"
+"1","Epoch 262/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 224.8952 - mean_squared_error: 212.1447 - val_loss: 230.4598 - val_mean_squared_error: 217.7172
+"
+"1","Epoch 263/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 224.4165 - mean_squared_error: 211.6739 - val_loss: 229.0922 - val_mean_squared_error: 216.3370
+"
+"1","Epoch 264/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 224.5490 - mean_squared_error: 211.7938 - val_loss: 230.1599 - val_mean_squared_error: 217.4123
+"
+"1","Epoch 265/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 224.1085 - mean_squared_error: 211.3609 - val_loss: 228.8263 - val_mean_squared_error: 216.0666
+"
+"1","Epoch 266/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 224.2111 - mean_squared_error: 211.4514 - val_loss: 229.8936 - val_mean_squared_error: 217.1410
+"
+"1","Epoch 267/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.8298 - mean_squared_error: 211.0773 - val_loss: 228.6393 - val_mean_squared_error: 215.8750
+"
+"1","Epoch 268/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.9653 - mean_squared_error: 211.2010 - val_loss: 229.7375 - val_mean_squared_error: 216.9802
+"
+"1","Epoch 269/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.6508 - mean_squared_error: 210.8935 - val_loss: 228.5211 - val_mean_squared_error: 215.7522
+"
+"1","Epoch 270/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.8042 - mean_squared_error: 211.0353 - val_loss: 229.6408 - val_mean_squared_error: 216.8788
+"
+"1","Epoch 271/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.5277 - mean_squared_error: 210.7657 - val_loss: 228.4569 - val_mean_squared_error: 215.6833
+"
+"1","Epoch 272/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.7124 - mean_squared_error: 210.9389 - val_loss: 229.6036 - val_mean_squared_error: 216.8370
+"
+"1","Epoch 273/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.4614 - mean_squared_error: 210.6947 - val_loss: 228.4356 - val_mean_squared_error: 215.6574
+"
+"1","Epoch 274/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 223.6771 - mean_squared_error: 210.8988 - val_loss: 229.6057 - val_mean_squared_error: 216.8345
+"
+"1","Epoch 275/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.4339 - mean_squared_error: 210.6627 - val_loss: 228.4370 - val_mean_squared_error: 215.6541
+"
+"1","Epoch 276/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.6735 - mean_squared_error: 210.8905 - val_loss: 229.6427 - val_mean_squared_error: 216.8670
+"
+"1","Epoch 277/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.4411 - mean_squared_error: 210.6654 - val_loss: 228.4659 - val_mean_squared_error: 215.6782
+"
+"1","Epoch 278/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.7064 - mean_squared_error: 210.9187 - val_loss: 229.6796 - val_mean_squared_error: 216.8992
+"
+"1","Epoch 279/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.4513 - mean_squared_error: 210.6709 - val_loss: 228.4746 - val_mean_squared_error: 215.6821
+"
+"1","Epoch 280/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 223.7181 - mean_squared_error: 210.9256 - val_loss: 229.6516 - val_mean_squared_error: 216.8666
+"
+"1","Epoch 281/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 223.4043 - mean_squared_error: 210.6194 - val_loss: 228.4052 - val_mean_squared_error: 215.6081
+"
+"1","Epoch 282/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.6377 - mean_squared_error: 210.8406 - val_loss: 229.5725 - val_mean_squared_error: 216.7829
+"
+"1","Epoch 283/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.3107 - mean_squared_error: 210.5211 - val_loss: 228.3264 - val_mean_squared_error: 215.5247
+"
+"1","Epoch 284/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.5446 - mean_squared_error: 210.7428 - val_loss: 229.4798 - val_mean_squared_error: 216.6855
+"
+"1","Epoch 285/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 223.2033 - mean_squared_error: 210.4091 - val_loss: 228.2002 - val_mean_squared_error: 215.3938
+"
+"1","Epoch 286/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.3932 - mean_squared_error: 210.5869 - val_loss: 229.2955 - val_mean_squared_error: 216.4965
+"
+"1","Epoch 287/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.0117 - mean_squared_error: 210.2128 - val_loss: 228.0203 - val_mean_squared_error: 215.2095
+"
+"1","Epoch 288/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 223.1749 - mean_squared_error: 210.3641 - val_loss: 229.1189 - val_mean_squared_error: 216.3153
+"
+"1","Epoch 289/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.8247 - mean_squared_error: 210.0211 - val_loss: 227.8485 - val_mean_squared_error: 215.0332
+"
+"1","Epoch 290/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 222.9625 - mean_squared_error: 210.1472 - val_loss: 228.9094 - val_mean_squared_error: 216.1012
+"
+"1","Epoch 291/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 222.6065 - mean_squared_error: 209.7982 - val_loss: 227.6702 - val_mean_squared_error: 214.8505
+"
+"1","Epoch 292/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.7395 - mean_squared_error: 209.9198 - val_loss: 228.7290 - val_mean_squared_error: 215.9162
+"
+"1","Epoch 293/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 222.4135 - mean_squared_error: 209.6007 - val_loss: 227.5049 - val_mean_squared_error: 214.6808
+"
+"1","Epoch 294/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 222.5302 - mean_squared_error: 209.7062 - val_loss: 228.5562 - val_mean_squared_error: 215.7388
+"
+"1","Epoch 295/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.2270 - mean_squared_error: 209.4096 - val_loss: 227.3607 - val_mean_squared_error: 214.5323
+"
+"1","Epoch 296/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.3457 - mean_squared_error: 209.5173 - val_loss: 228.4147 - val_mean_squared_error: 215.5928
+"
+"1","Epoch 297/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 222.0690 - mean_squared_error: 209.2471 - val_loss: 227.2461 - val_mean_squared_error: 214.4133
+"
+"1","Epoch 298/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 222.1974 - mean_squared_error: 209.3646 - val_loss: 228.3077 - val_mean_squared_error: 215.4814
+"
+"1","Epoch 299/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.9428 - mean_squared_error: 209.1164 - val_loss: 227.1585 - val_mean_squared_error: 214.3213
+"
+"1","Epoch 300/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.0831 - mean_squared_error: 209.2459 - val_loss: 228.2292 - val_mean_squared_error: 215.3985
+"
+"1","Epoch 301/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.8432 - mean_squared_error: 209.0124 - val_loss: 227.1055 - val_mean_squared_error: 214.2638
+"
+"1","Epoch 302/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 222.0123 - mean_squared_error: 209.1707 - val_loss: 228.1944 - val_mean_squared_error: 215.3593
+"
+"1","Epoch 303/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.7844 - mean_squared_error: 208.9493 - val_loss: 227.0588 - val_mean_squared_error: 214.2127
+"
+"1","Epoch 304/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.9516 - mean_squared_error: 209.1055 - val_loss: 228.1466 - val_mean_squared_error: 215.3072
+"
+"1","Epoch 305/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.7157 - mean_squared_error: 208.8762 - val_loss: 227.0040 - val_mean_squared_error: 214.1536
+"
+"1","Epoch 306/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.8830 - mean_squared_error: 209.0325 - val_loss: 228.0893 - val_mean_squared_error: 215.2455
+"
+"1","Epoch 307/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.6393 - mean_squared_error: 208.7955 - val_loss: 226.9393 - val_mean_squared_error: 214.0845
+"
+"1","Epoch 308/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.8033 - mean_squared_error: 208.9485 - val_loss: 228.0186 - val_mean_squared_error: 215.1704
+"
+"1","Epoch 309/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.5513 - mean_squared_error: 208.7031 - val_loss: 226.8617 - val_mean_squared_error: 214.0025
+"
+"1","Epoch 310/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.7083 - mean_squared_error: 208.8491 - val_loss: 227.9508 - val_mean_squared_error: 215.0983
+"
+"1","Epoch 311/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.4662 - mean_squared_error: 208.6136 - val_loss: 226.7940 - val_mean_squared_error: 213.9305
+"
+"1","Epoch 312/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 221.6250 - mean_squared_error: 208.7614 - val_loss: 227.8596 - val_mean_squared_error: 215.0027
+"
+"1","Epoch 313/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.3598 - mean_squared_error: 208.5029 - val_loss: 226.6919 - val_mean_squared_error: 213.8240
+"
+"1","Epoch 314/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.5003 - mean_squared_error: 208.6324 - val_loss: 227.7410 - val_mean_squared_error: 214.8797
+"
+"1","Epoch 315/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.2285 - mean_squared_error: 208.3672 - val_loss: 226.5736 - val_mean_squared_error: 213.7014
+"
+"1","Epoch 316/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.3550 - mean_squared_error: 208.4828 - val_loss: 227.6092 - val_mean_squared_error: 214.7435
+"
+"1","Epoch 317/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.0847 - mean_squared_error: 208.2190 - val_loss: 226.4490 - val_mean_squared_error: 213.5725
+"
+"1","Epoch 318/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 221.2010 - mean_squared_error: 208.3245 - val_loss: 227.4738 - val_mean_squared_error: 214.6037
+"
+"1","Epoch 319/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.9371 - mean_squared_error: 208.0670 - val_loss: 226.3250 - val_mean_squared_error: 213.4443
+"
+"1","Epoch 320/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 221.0463 - mean_squared_error: 208.1656 - val_loss: 227.3417 - val_mean_squared_error: 214.4673
+"
+"1","Epoch 321/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 220.7919 - mean_squared_error: 207.9175 - val_loss: 226.2062 - val_mean_squared_error: 213.3213
+"
+"1","Epoch 322/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 220.8977 - mean_squared_error: 208.0127 - val_loss: 227.2174 - val_mean_squared_error: 214.3387
+"
+"1","Epoch 323/400
+16000/16000 [==============================] - 0s 14us/sample - loss: 220.6538 - mean_squared_error: 207.7751 - val_loss: 226.0957 - val_mean_squared_error: 213.2066
+"
+"1","Epoch 324/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.7585 - mean_squared_error: 207.8693 - val_loss: 227.1033 - val_mean_squared_error: 214.2202
+"
+"1","Epoch 325/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 220.5248 - mean_squared_error: 207.6417 - val_loss: 225.9938 - val_mean_squared_error: 213.1005
+"
+"1","Epoch 326/400
+16000/16000 [==============================] - 0s 13us/sample - loss: 220.6298 - mean_squared_error: 207.7365 - val_loss: 226.9990 - val_mean_squared_error: 214.1117
+"
+"1","Epoch 327/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.4049 - mean_squared_error: 207.5176 - val_loss: 225.9119 - val_mean_squared_error: 213.0143
+"
+"1","Epoch 328/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.5258 - mean_squared_error: 207.6283 - val_loss: 226.9244 - val_mean_squared_error: 214.0329
+"
+"1","Epoch 329/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.3120 - mean_squared_error: 207.4204 - val_loss: 225.8311 - val_mean_squared_error: 212.9293
+"
+"1","Epoch 330/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.4242 - mean_squared_error: 207.5224 - val_loss: 226.8366 - val_mean_squared_error: 213.9408
+"
+"1","Epoch 331/400
+16000/16000 [==============================] - 0s 12us/sample - loss: 220.2081 - mean_squared_error: 207.3123 - val_loss: 225.7452 - val_mean_squared_error: 212.8392
+"
+"1","Epoch 332/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.3170 - mean_squared_error: 207.4111 - val_loss: 226.7623 - val_mean_squared_error: 213.8623
+"
+"1","Epoch 333/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 220.1165 - mean_squared_error: 207.2165 - val_loss: 225.6774 - val_mean_squared_error: 212.7673
+"
+"1","Epoch 334/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.2323 - mean_squared_error: 207.3221 - val_loss: 226.6962 - val_mean_squared_error: 213.7920
+"
+"1","Epoch 335/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.0328 - mean_squared_error: 207.1286 - val_loss: 225.6101 - val_mean_squared_error: 212.6957
+"
+"1","Epoch 336/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.1488 - mean_squared_error: 207.2344 - val_loss: 226.6098 - val_mean_squared_error: 213.7014
+"
+"1","Epoch 337/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.9316 - mean_squared_error: 207.0232 - val_loss: 225.5172 - val_mean_squared_error: 212.5987
+"
+"1","Epoch 338/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 220.0347 - mean_squared_error: 207.1161 - val_loss: 226.5048 - val_mean_squared_error: 213.5922
+"
+"1","Epoch 339/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.8137 - mean_squared_error: 206.9011 - val_loss: 225.4261 - val_mean_squared_error: 212.5035
+"
+"1","Epoch 340/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.9224 - mean_squared_error: 206.9998 - val_loss: 226.4122 - val_mean_squared_error: 213.4954
+"
+"1","Epoch 341/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.7066 - mean_squared_error: 206.7898 - val_loss: 225.3263 - val_mean_squared_error: 212.3995
+"
+"1","Epoch 342/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.7991 - mean_squared_error: 206.8723 - val_loss: 226.2981 - val_mean_squared_error: 213.3771
+"
+"1","Epoch 343/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.5805 - mean_squared_error: 206.6595 - val_loss: 225.2171 - val_mean_squared_error: 212.2862
+"
+"1","Epoch 344/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.6642 - mean_squared_error: 206.7333 - val_loss: 226.1782 - val_mean_squared_error: 213.2531
+"
+"1","Epoch 345/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.4489 - mean_squared_error: 206.5237 - val_loss: 225.1066 - val_mean_squared_error: 212.1716
+"
+"1","Epoch 346/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.5271 - mean_squared_error: 206.5921 - val_loss: 226.0590 - val_mean_squared_error: 213.1297
+"
+"1","Epoch 347/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.3176 - mean_squared_error: 206.3883 - val_loss: 224.9984 - val_mean_squared_error: 212.0593
+"
+"1","Epoch 348/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.3922 - mean_squared_error: 206.4532 - val_loss: 225.9434 - val_mean_squared_error: 213.0099
+"
+"1","Epoch 349/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.1896 - mean_squared_error: 206.2561 - val_loss: 224.9048 - val_mean_squared_error: 211.9617
+"
+"1","Epoch 350/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 219.2748 - mean_squared_error: 206.3317 - val_loss: 225.8521 - val_mean_squared_error: 212.9145
+"
+"1","Epoch 351/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.0831 - mean_squared_error: 206.1456 - val_loss: 224.8117 - val_mean_squared_error: 211.8645
+"
+"1","Epoch 352/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.1586 - mean_squared_error: 206.2114 - val_loss: 225.7638 - val_mean_squared_error: 212.8222
+"
+"1","Epoch 353/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.9798 - mean_squared_error: 206.0382 - val_loss: 224.7323 - val_mean_squared_error: 211.7811
+"
+"1","Epoch 354/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 219.0594 - mean_squared_error: 206.1082 - val_loss: 225.6698 - val_mean_squared_error: 212.7240
+"
+"1","Epoch 355/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.8720 - mean_squared_error: 205.9262 - val_loss: 224.6393 - val_mean_squared_error: 211.6841
+"
+"1","Epoch 356/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.9440 - mean_squared_error: 205.9888 - val_loss: 225.5683 - val_mean_squared_error: 212.6184
+"
+"1","Epoch 357/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.7576 - mean_squared_error: 205.8078 - val_loss: 224.5439 - val_mean_squared_error: 211.5846
+"
+"1","Epoch 358/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.8258 - mean_squared_error: 205.8665 - val_loss: 225.4657 - val_mean_squared_error: 212.5118
+"
+"1","Epoch 359/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.6424 - mean_squared_error: 205.6885 - val_loss: 224.4486 - val_mean_squared_error: 211.4854
+"
+"1","Epoch 360/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.7077 - mean_squared_error: 205.7444 - val_loss: 225.3638 - val_mean_squared_error: 212.4059
+"
+"1","Epoch 361/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.5280 - mean_squared_error: 205.5701 - val_loss: 224.3543 - val_mean_squared_error: 211.3871
+"
+"1","Epoch 362/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.5907 - mean_squared_error: 205.6235 - val_loss: 225.2633 - val_mean_squared_error: 212.3013
+"
+"1","Epoch 363/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.4148 - mean_squared_error: 205.4528 - val_loss: 224.2709 - val_mean_squared_error: 211.2997
+"
+"1","Epoch 364/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.4870 - mean_squared_error: 205.5158 - val_loss: 225.1817 - val_mean_squared_error: 212.2158
+"
+"1","Epoch 365/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.3185 - mean_squared_error: 205.3526 - val_loss: 224.1946 - val_mean_squared_error: 211.2194
+"
+"1","Epoch 366/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.3925 - mean_squared_error: 205.4173 - val_loss: 225.1166 - val_mean_squared_error: 212.1467
+"
+"1","Epoch 367/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.2371 - mean_squared_error: 205.2671 - val_loss: 224.1245 - val_mean_squared_error: 211.1453
+"
+"1","Epoch 368/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.3061 - mean_squared_error: 205.3269 - val_loss: 225.0284 - val_mean_squared_error: 212.0545
+"
+"1","Epoch 369/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.1358 - mean_squared_error: 205.1619 - val_loss: 224.0330 - val_mean_squared_error: 211.0498
+"
+"1","Epoch 370/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 218.1939 - mean_squared_error: 205.2108 - val_loss: 224.9253 - val_mean_squared_error: 211.9473
+"
+"1","Epoch 371/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.0215 - mean_squared_error: 205.0436 - val_loss: 223.9440 - val_mean_squared_error: 210.9570
+"
+"1","Epoch 372/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 218.0843 - mean_squared_error: 205.0973 - val_loss: 224.8340 - val_mean_squared_error: 211.8521
+"
+"1","Epoch 373/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.9174 - mean_squared_error: 204.9355 - val_loss: 223.8495 - val_mean_squared_error: 210.8586
+"
+"1","Epoch 374/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.9680 - mean_squared_error: 204.9770 - val_loss: 224.7266 - val_mean_squared_error: 211.7408
+"
+"1","Epoch 375/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.7994 - mean_squared_error: 204.8135 - val_loss: 223.7576 - val_mean_squared_error: 210.7628
+"
+"1","Epoch 376/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.8546 - mean_squared_error: 204.8598 - val_loss: 224.6439 - val_mean_squared_error: 211.6541
+"
+"1","Epoch 377/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.7029 - mean_squared_error: 204.7132 - val_loss: 223.6757 - val_mean_squared_error: 210.6770
+"
+"1","Epoch 378/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.7535 - mean_squared_error: 204.7547 - val_loss: 224.5430 - val_mean_squared_error: 211.5493
+"
+"1","Epoch 379/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.5907 - mean_squared_error: 204.5970 - val_loss: 223.5763 - val_mean_squared_error: 210.5737
+"
+"1","Epoch 380/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.6310 - mean_squared_error: 204.6284 - val_loss: 224.4308 - val_mean_squared_error: 211.4332
+"
+"1","Epoch 381/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.4686 - mean_squared_error: 204.4710 - val_loss: 223.4734 - val_mean_squared_error: 210.4670
+"
+"1","Epoch 382/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.5037 - mean_squared_error: 204.4973 - val_loss: 224.3174 - val_mean_squared_error: 211.3159
+"
+"1","Epoch 383/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.3454 - mean_squared_error: 204.3439 - val_loss: 223.3714 - val_mean_squared_error: 210.3612
+"
+"1","Epoch 384/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.3771 - mean_squared_error: 204.3669 - val_loss: 224.2060 - val_mean_squared_error: 211.2006
+"
+"1","Epoch 385/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.2239 - mean_squared_error: 204.2185 - val_loss: 223.2717 - val_mean_squared_error: 210.2577
+"
+"1","Epoch 386/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.2533 - mean_squared_error: 204.2392 - val_loss: 224.0977 - val_mean_squared_error: 211.0884
+"
+"1","Epoch 387/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.1053 - mean_squared_error: 204.0961 - val_loss: 223.1747 - val_mean_squared_error: 210.1570
+"
+"1","Epoch 388/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 217.1329 - mean_squared_error: 204.1151 - val_loss: 223.9929 - val_mean_squared_error: 210.9798
+"
+"1","Epoch 389/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 216.9899 - mean_squared_error: 203.9768 - val_loss: 223.0808 - val_mean_squared_error: 210.0593
+"
+"1","Epoch 390/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 217.0163 - mean_squared_error: 203.9947 - val_loss: 223.8919 - val_mean_squared_error: 210.8750
+"
+"1","Epoch 391/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.8780 - mean_squared_error: 203.8611 - val_loss: 222.9899 - val_mean_squared_error: 209.9646
+"
+"1","Epoch 392/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.9034 - mean_squared_error: 203.8781 - val_loss: 223.7943 - val_mean_squared_error: 210.7736
+"
+"1","Epoch 393/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.7693 - mean_squared_error: 203.7486 - val_loss: 222.9012 - val_mean_squared_error: 209.8722
+"
+"1","Epoch 394/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.7935 - mean_squared_error: 203.7645 - val_loss: 223.6990 - val_mean_squared_error: 210.6744
+"
+"1","Epoch 395/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 216.6629 - mean_squared_error: 203.6383 - val_loss: 222.8210 - val_mean_squared_error: 209.7883
+"
+"1","Epoch 396/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 216.6946 - mean_squared_error: 203.6618 - val_loss: 223.6191 - val_mean_squared_error: 210.5909
+"
+"1","Epoch 397/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 216.5700 - mean_squared_error: 203.5417 - val_loss: 222.7400 - val_mean_squared_error: 209.7035
+"
+"1","Epoch 398/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.5948 - mean_squared_error: 203.5583 - val_loss: 223.5296 - val_mean_squared_error: 210.4976
+"
+"1","Epoch 399/400
+16000/16000 [==============================] - 0s 11us/sample - loss: 216.4691 - mean_squared_error: 203.4371 - val_loss: 222.6619 - val_mean_squared_error: 209.6217
+"
+"1","Epoch 400/400
+16000/16000 [==============================] - 0s 10us/sample - loss: 216.4990 - mean_squared_error: 203.4589 - val_loss: 223.4603 - val_mean_squared_error: 210.4245
+"
+"0","plot(history)"

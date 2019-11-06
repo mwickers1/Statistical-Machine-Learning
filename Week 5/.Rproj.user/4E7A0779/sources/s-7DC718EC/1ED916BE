@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572971895619.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3268126901",
+    "id" : "1ED916BE",
+    "lastKnownWriteTime" : 1572977319,
+    "last_content_update" : 1572977319601,
+    "path" : "C:/Users/melissa.wickers/OneDrive - Next Tier Concepts, Inc/Statistical and Machine Learning/Week 5/NeuralNetworkKerasWickers.Rmd",
+    "project_path" : "NeuralNetworkKerasWickers.Rmd",
+    "properties" : {
+        "cursorPosition" : "73,286",
+        "last_setup_crc32" : "7DC718ECbb338d19",
+        "scrollLine" : "70",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

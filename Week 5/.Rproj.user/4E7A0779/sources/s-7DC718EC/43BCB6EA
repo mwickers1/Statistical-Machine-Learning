@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572888294339.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "43BCB6EA",
+    "lastKnownWriteTime" : 1572971951,
+    "last_content_update" : 1572971951658,
+    "path" : "C:/Users/melissa.wickers/OneDrive - Next Tier Concepts, Inc/Statistical and Machine Learning/Week 5/ExerciseWeek5Wickers.R",
+    "project_path" : "ExerciseWeek5Wickers.R",
+    "properties" : {
+        "cursorPosition" : "51,0",
+        "scrollLine" : "26",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

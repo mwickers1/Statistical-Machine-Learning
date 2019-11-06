@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572890419686.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FB727DD1",
+    "lastKnownWriteTime" : 1572890395,
+    "last_content_update" : 1572890395,
+    "path" : "C:/Users/melissa.wickers/OneDrive - Next Tier Concepts, Inc/Statistical and Machine Learning/Week 5/Nnet3.R",
+    "project_path" : "Nnet3.R",
+    "properties" : {
+        "cursorPosition" : "19,17",
+        "scrollLine" : "8"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

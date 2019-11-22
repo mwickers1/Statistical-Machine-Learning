@@ -1,0 +1,143 @@
+---
+title: 'Week 8: API Exercise'
+author: "Melissa Wickers"
+date: "11/22/2019"
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Accessing the Data
+
+In order to query the API, the URL must adhere to the following structure: 'https://corpslocks.usace.army.mil/lpwb/xml.tonnage?in_river=GI&in_lock=01&in_mon_yr=102019'. We must include the river code, lock code and the month/year. If this is not followed, then the query will result in an error.
+
+In order to ensure the url is always correct, a function was created to pull the data and then reformat it into a dataframe. In this particular case, the `river` and `lock` variables are set automatically to 'MI' and '27'. This was done because we are interested in a particular lock, 'Chain of Rocks Lock and Dam 27'. The date must be set by the user. Each variable must be a string. The function is then called like so, `GetQuery(date='012019')` If a user wants to see a different lock, then they can change the river and/or lock variable by simply calling the function like so, `GetQuery(river = 'GI',lock = '01', date = '012019')`. The function can be seen below.
+
+The url is pieced together with `paste0`. `paste0` ensure that there are no spaces once the `river`, `lock`, and `date` variables are paste into the url. In order to get around the security restrictions, we must use `set_config` to verify the host and peer. Then `GET()` was used to pull the data from the API and `content()` was used to turn the data into an XML format. From there, we can finally convert our data into a dataframe by using `xmlToDataFrame`.
+
+```{r data}
+library(httr)
+library(XML)
+GetQuery <- function(river = 'MI', lock = '27', date){
+  ##Function builds query, configures security settings,querys the url, converts it to xml
+  ##converts xml to dataframe, assigns the date to the data, and prints the data.
+  ##all variables must be strings.
+  
+  query <- paste0('https://corpslocks.usace.army.mil/lpwb/xml.tonnage','?', 'in_river=',river,'&','in_lock=',lock,'&','in_mon_yr=',date)
+      
+  #security settings must be confgured to allow the qeury to reach the api
+  httr::set_config(config(ssl_verifypeer = 0L, ssl_verifyhost = 0L))    
+  urlquery <- GET(query)
+  
+  xml <- content(urlquery, 'text')
+  
+  data <- xmlToDataFrame(xml)
+  
+  data$date <- date
+  data
+}
+```
+
+## Combining Monthly Data
+
+Now that we can pull the data from the API, we must do this for each month from January 2018 to October 2019. This will result in 22 different dataframe if we do it one by one. Ideally, we want all of the data to be in one dataframe. In order to do this, a for loop was created. The forloop goes from 1 to 22. This forloop loops through each date, inputs it into the function, exports the dataframe from the function, then adds it into a list. This list will contain all 22 dataframes. Now, we can use `do.call()` to bind all of the dataframes in `datalist` into one dataframe.
+
+```{r list}
+dates <- c('012018', '022018','032018', '042018', '052018','062018', '072018','082018', '092018', '102018','112018','122018','012019', '022019','032019', '042019', '052019','062019', '072019','082019', '092019', '102019')
+
+
+datalist <- list()
+
+for(i in 1:length(dates)){
+  ##loop iterates through the dates and querys the url specific to those dates and builds a dataframe
+  ##the dataframes are then put into a list in order to be able to combine them later.
+  
+  data <- GetQuery(date = dates[i])
+  datalist[[i]] <- data
+
+}
+
+data <- do.call(rbind, datalist)#bind all dataframes in the list into one dataframe.
+```
+
+## Data Cleansing
+Now we must format the data to be able to use it to do any analysis on the data. All of the columns pertianing to tons are read in as characters. These columns must be converted to numeric values.  We must also ensure that the date is in order if we decide to use it as a factor. An additional column was added that contains the dates converted into an actual date. If we want to plot a time series, this will be needed.
+
+```{r clean, warning=F, message = F}
+library(lubridate)
+#convert character numbers into numeric
+data$UPBOUND_TONS <- as.numeric(as.character(data$UPBOUND_TONS))
+data$DOWNBOUND_TONS <- as.numeric(as.character(data$DOWNBOUND_TONS))
+data$TOTAL_TONS <- as.numeric(as.character(data$TOTAL_TONS))
+
+#convert date string into date format
+data$date2 <- format(mdy(data$date),"%m/%Y")
+
+#ensure date is in correct order
+data$date <- factor(data$date, levels = dates, labels = dates)
+
+```
+
+## Total Tons by Product
+The first plot is a times series plot of the total tons that go through the lock each month. Although we can see that there is a difference in how many tons of each product goes through each month, this plot is not helpful in any other way. 
+
+
+```{r TotalTons1, echo=F, message = F, warning=F}
+library(ggplot2)
+
+theme_set(theme_minimal())
+ggplot(data = data, aes(x= date2, y = TOTAL_TONS))+
+  geom_line(aes(group = COMM_DESC,color = COMM_DESC)) +
+  xlab("")+
+  ylab('Total Tons')+
+  labs(color = 'Product')+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+Another perspective would be to look at the data via a bar chart. This helps us visualize the proportion of each product that goes through each month. Based on the bar chart, it is apparent that Food and Farm Products are the biggest proportion of products that go through the lock each month. Does this hold true for upbound and downbound tons?
+
+```{r TotalTons2, echo=F, message = F, warning=F}
+ggplot(data = data, aes(x= date, y = TOTAL_TONS))+ 
+  geom_bar(stat = 'identity',aes(fill = COMM_DESC))+
+  xlab("")+
+  ylab('Total Tons')+
+  labs(fill = 'Product')+
+  ggtitle('Total Monthly Tons Grouped by Product')+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+## Upbound Tons
+
+Below, we can see that the product going through the lock upbound the most is not Food and Farm Products. It is Chemicals and Related Products and Crude Materials, Inedible, except Fuel Products. This shows us that the needs of the upbound must be different from the downbound. We may be able to surmise that there are more site upbound that house industries that need to use Chemicals and Crude Materials.
+
+```{r UpTons, echo=F, message = F, warning=F}
+ggplot(data = data, aes(x= date, y = UPBOUND_TONS))+ 
+  geom_bar(stat = 'identity',aes(fill = COMM_DESC))+
+  xlab("")+
+  ylab('Total Upbound Tons')+
+  labs(fill = 'Product')+
+  ggtitle('Monthly Upbound Tons Grouped by Product')+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+## Downbound Tons
+
+Below, we can see without a doubt that Food and Farm Products are by far the largest portion of tons that goes through the lock Downbound. We can gather from this that sites that below the lock must need more Food and Farm Products than the upbound sites. This makes sense due to the downbound sites on the Mississippi River are southern states. Most southern states contain vast amounts of farm land.
+```{r DownTons, echo=F, message = F, warning=F}
+ggplot(data = data, aes(x= date, y = DOWNBOUND_TONS))+ 
+  geom_bar(stat = 'identity',aes(fill = COMM_DESC))+
+  xlab("")+
+  ylab('Total Downbound Tons')+
+  labs(fill = 'Product')+
+  ggtitle('Monthly Downbound Tons Grouped by Product')+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```

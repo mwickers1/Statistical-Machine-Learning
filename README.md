@@ -9,3 +9,4 @@ Repository of assignments done in the OS4118 course at NPS.
 5. Week 5: Neural Network (cont)
 6. Week 6: Neural Network (cont)
 7. Week 7: Text Analysis
+8. Week 8: APIs

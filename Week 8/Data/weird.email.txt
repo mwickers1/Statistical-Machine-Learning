@@ -1,0 +1,26 @@
+Weird email addresses
+
+#
+# Things that might be e-mail addresses
+#
+bob@gmail.com
+buttrey@nps.navy.mail
+big.bad.john@csumb.edu
+
+# This one is invalid, because it leads with a dot.
+.ghj@microsoft.net
+
+# This looks valid to us, but really isn't, because of two dots
+Mary..@PuertoRicoTourism.org
+
+# This looks valid to us, though there's no such address
+TheLateRipTorn@asdf.adsf.asdf
+
+# This looks valid to us, but ends in a dot
+ThisOneEnds@In.adot.
+
+# This looks valid to us, but only has one domain part
+SailorBoy@Navy
+
+# This looks valid to us, but it has four domain parts
+Jarhead@USMC.Navy.us.mil

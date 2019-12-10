@@ -1,0 +1,44 @@
+install.packages ("cleanNLP")
+library (cleanNLP)
+cnlp_init_udpipe ()
+cnlp_annotate ('This is a test')
+#
+# Let's see if we have all those abstract files in the current directory.
+# That have names that start 1, then 4-8, then some stuff, ending in
+# dot, t, x, t. This looks like a job for regular expressions!
+#
+length (dir (pattern = "^1[4-8].+\\.txt")) # 181
+abs <- dir (pattern = "^1[4-8].+\\.txt") # file names
+#
+# Creating a simple corpus from all the documents is straightforward.
+#
+or.corpus1 <- VCorpus (DirSource (".", pattern = "^1[4-8].+\\.txt", mode = "text"))
+#
+# Let's annotate one document -- say, number 15
+#
+intxt <- paste (scan (abs[15], what = "", sep="\n"), collapse= " ")
+annot.out <- cnlp_annotate (intxt)
+#
+# Okay. the "token" element of the "annot.out" item lists all
+# the tokens -- words -- in the document. Your jobs are:
+# 1.) Extract just the tokens for which upos is PROPN, NOUN, or VERB.
+# 2.) Now extract just the lemmas from these tokens.
+# 3.) Convert the lemmas to lower-case...
+# 4.) and paste() them together using collapse = " " to create one long
+# document-like string with just the 'important' words.
+# 5.) If you can do that for one document, you can do it for all of them.
+# Create an empty character vector of the proper length, and insert the
+# processed abstracts into it. At the end of that operation you'll have
+# a vector of 181 character strings.
+
+# Now create the new corpus.
+or.corpus2 <- VCorpus (VectorSource (vector.of.text))
+
+library (tm)
+# Use DocumentTermMatrix from librarey tm to construct the DTM.
+
+library (topicmodels)
+# Use LDA from topicmodels to perform LDA.
+
+# Now tell me what you've found out!
+

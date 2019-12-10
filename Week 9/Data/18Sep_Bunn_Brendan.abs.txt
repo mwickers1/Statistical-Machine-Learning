@@ -1,0 +1,1 @@
+We model the interdependent operation of potable water distribution and electric power distribution infrastructure systems as a mixed simulation-optimization problem. Our goal is to capture the key attributes and essential interdependencies of these systems with enough fidelity to represent real infrastructure physics, measure how networks perform

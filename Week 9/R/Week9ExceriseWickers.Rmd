@@ -1,0 +1,115 @@
+---
+title: "Text Mining Exercise"
+author: "Melissa Wickers"
+date: "12/6/2019"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##Objective
+Perform LDA on a document term matrix comprised of abstarcts from the Naval Postgraduate School's Operations Research Department
+
+## Importing Data
+First we must be able to read, annotate, and convert the text to lowercase. To do so, we must use a for loop to iterate through the 181 text files. We also want to use just pronouns, nouns, and verbs.We will filter the data by word type,then extra the lemma column for further analysis. The lemma column for each text file is stored in a character vector `vec`.
+
+```{r data, warning=F,echo=T, results=F, message=F}
+library (cleanNLP)
+library(dplyr)
+library(stringr)
+library(tm)
+
+cnlp_init_udpipe ()
+cnlp_annotate ('This is a test')
+
+length (dir(path = 'Data/',pattern = "^1[4-8].+\\.txt")) # 181
+abs <- dir(path = 'Data/',pattern = "^1[4-8].+\\.txt") # file names
+#
+# Creating a simple corpus from all the documents is straightforward.
+#
+or.corpus1 <- VCorpus(DirSource ("Data/", pattern = "^1[4-8].+\\.txt", mode = "text"))
+#
+# Let's annotate one document -- say, number 15
+#
+
+vec <- character()
+
+for (i in 1:length(abs)) {
+  
+  intxt <- paste(scan(paste0('Data/',abs[i]), what = "", sep="\n"), collapse= " ")
+  annot.out <- cnlp_annotate(intxt)
+  #
+  # Okay. the "token" element of the "annot.out" item lists all
+  # the tokens -- words -- in the document. Your jobs are:
+  # 1.) Extract just the tokens for which upos is PROPN, NOUN, or VERB.
+  # 2.) Now extract just the lemmas from these tokens.
+  # 3.) Convert the lemmas to lower-case...
+  # 4.) and paste() them together using collapse = " " to create one long
+  # document-like string with just the 'important' words.
+  # 5.) If you can do that for one document, you can do it for all of them.
+  # Create an empty character vector of the proper length, and insert the
+  # processed abstracts into it. At the end of that operation you'll have
+  # a vector of 181 character strings.
+  
+  filterAnno <- annot.out$token %>%
+    filter(str_detect(upos,c('NOUN', 'PROPN', 'VERB')))
+  
+  filterAnno$lemma <- tolower(filterAnno$lemma)
+  lemma <- paste(filterAnno$lemma, collapse = ' ')
+  
+  vec <- c(vec, lemma)
+}
+```
+
+## Create Document Term Matrix
+Once all the text files have been processed and the vec file is filled, we need to create a corpus for the vector. Now lets, remove all stopwords from the corpus. It is helpful to filter out any words that may be common between all text files. Many words like 'model','study','develop', 'use', and  'data' will be used in most of the text given they are operations research related abstarcts. 
+
+Then we can use the `DocumentTermMartix()` function to create a Document Term Matrix(DTM). In order to be able to use the DTM, we must remove any rows that sum to zero. If there are any rows that sum to 0, then it will cause an error later on in our anlaysis.
+
+```{r dtm, warning=F, message=F}
+library (tm)
+# Now create the new corpus.
+or.corpus2 <- VCorpus(VectorSource(vec))
+or.corpus2<-tm_map (or.corpus2, removeWords, c(stopwords ("english"), 'data', 'model', 'develop', 'thesis','study', 'use'))
+
+# Use DocumentTermMatrix from library tm to construct the DTM.
+
+dtm <- DocumentTermMatrix(or.corpus2)
+rowTotals <- apply(dtm, 1, sum)
+dtm <- dtm[rowTotals>0,]
+```
+
+##LDA
+
+Now we can use the `LDA()` function to do the analysis we need to do. We must set `k=4` in order to have 4 topics. Now that we have performed the LDA, we can now look at a graphical depiction of the topics. Currently, we do not know what the 4 topics may be comprised of. By looking at the graph, we can see that Topic 1 appears to be related to vessels, simulations and the Marine Corps. Topic 2 appears to be realated to ships, inventory, and scheduling. Topics 3 seems to be related to networks, sensors and targerts. Finally, topic 4 appears to be reatlated to the Navy, markets, flights, and sleeping.
+
+```{r lda, warning=F,message=F}
+
+library(topicmodels)
+library(tidytext)
+lda <- LDA(dtm, k = 4)
+
+
+
+topics <- tidy(lda, matrix = "beta")
+
+library(ggplot2)
+
+top_terms <- topics %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+top_terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  coord_flip() +
+  scale_x_reordered()
+```
+
